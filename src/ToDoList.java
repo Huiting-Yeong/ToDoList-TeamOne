@@ -10,4 +10,9 @@ public class ToDoList {
 	public boolean addItem(Item itemOne){
 		return itemList.add(itemOne);
 	}
+	
+	public boolean removeItem(Item itemOne){
+		return itemList.remove(itemOne);
+	}
+	
 }

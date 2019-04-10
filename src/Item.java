@@ -8,4 +8,8 @@ public class Item {
 		done = false;
 	}
 	
+	public void toggleStatus(){
+		done = !done;
+	}
+	
 }
