@@ -119,19 +119,17 @@
     <property name="env.PROCESSOR_LEVEL" value="6" />
     <property name="env.VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\" />
   </properties>
-  <testcase classname="test.MyStringStackTest" name="testStackNull" time="0.002" />
-  <testcase classname="test.MyStringStackTest" name="testPop" time="0.001" />
-  <testcase classname="test.MyStringStackTest" name="testClear" time="0.001" />
-  <testcase classname="test.MyStringStackTest" name="testPush" time="0.003" />
-  <testcase classname="test.MyStringStackTest" name="testStackSequence" time="0.001" />
-  <testcase classname="test.MyStringStackTest" name="testIsEmpty" time="0.0" />
+  	<testcase classname="test.TestCaseAddItem" name="testAddNewItem" time="0.002" />
+    <testcase classname="test.TestCaseAddItem" name="testAddExistingItem" time="0.002" />
+    <testcase classname="test.TestCaseAddItem" name="testAddEmptyItem" time="0.002" />
+
+      <testcase classname="test.TestCaseRemoveItem" name="testRemoveItem" time="0.002" />
+      <testcase classname="test.TestCaseRemoveItem" name="testRemoveExistingItem" time="0.002" />
+      <testcase classname="test.TestCaseRemoveItem" name="testRemoveEmptyItem" time="0.002" />
   <system-out><![CDATA[Test for default package
 hello
-hello
-hello
-hello
-hello
-hello
+ToDoList
+Team 1
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
