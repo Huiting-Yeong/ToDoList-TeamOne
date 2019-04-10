@@ -4,25 +4,28 @@ import org.junit.Test;
 
 public class TestCaseAddItem {
 	private ToDoList testList = new ToDoList();
+	private Item item = new Item("Buy fruits");
+	
 	
 	@Test
 	public void testAddNewItem()
 	{
-		bool isAdded = testList.addItem("Buy fruits");
+		Boolean isAdded = testList.addItem(item);
 		assertEquals(true, isAdded);
 	}
 	
 	@Test
 	public void testAddExistingItem()
 	{
-		bool isAdded = testList.addItem("Buy fruits");
+		testList.addItem(item);
+		Boolean isAdded = testList.addItem(item);
 		assertEquals(false, isAdded);
 	}
 	
 	@Test
 	public void testAddEmptyItem()
 	{
-		bool isAdded = testList.addItem("");
+		Boolean isAdded = testList.addItem(new Item(""));
 		assertEquals(false, isAdded);
 	}
 }
