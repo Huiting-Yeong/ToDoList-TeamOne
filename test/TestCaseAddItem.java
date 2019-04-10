@@ -23,6 +23,6 @@ public class TestCaseAddItem {
 	public void testAddEmptyItem()
 	{
 		bool isAdded = testList.addItem("");
-		assertEquals(true, isAdded);
+		assertEquals(false, isAdded);
 	}
 }
